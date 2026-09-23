@@ -7,17 +7,14 @@
     <title>Loja de tênis</title>
 
     <style>
-        #header h1, #header h2 {
+        #header {
             text-align: center;
         }
 
-        #audio {
-            float: right;
-        }
-
-        #navbar ul{
+        #navbar ul {
             display: flex;
-            justify-content: space-around;
+            justify-content:center;
+            gap: 50px;
         }
 
         #header {
@@ -31,6 +28,10 @@
             border: 3px solid black;
         }
 
+        #midia {
+            display: flex;
+            justify-content: flex-start;
+        }
     </style>
 
 </head>
@@ -38,9 +39,9 @@
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="/src/sobre.html" target="_blank">Conheça mais sobre nossa loja</a></li>
-            <li><a href="/src/outros_tenis.html" target="_blank">Alguns tênis interessantes</a></li>
-            <li><a href="/src/contatos.html" target="_blank">Contatos</a></li>
+            <li><a href="#historia_tenis" target="_blank">História dos tênis</a></li>
+            <li><a href="#sobre" >Conheça mais sobre nossa loja</a></li>
+            <li><a href="#produtos" >nossos produtos</a></li>
         </ul>
         <hr>
     </nav>
@@ -51,23 +52,12 @@
         <h2>A importância de comprar calçados na sociedade atual</h2>
 
         <p>Entenda por que somos a melhor loja de calçados do país</p>
-
-        <video controls width="250" id="video">
-            <caption>Acompanhe</caption>
-            <source src="/assets/video/shoes.mp4">
-        </video>
-
-        <figure id="audio">
-            <figcaption>Nossa qualidade também está no som</figcaption>
-
-            <audio controls src="/assets/audio/footsteps.mp3"></audio>
-        </figure>
     </header>
 
 
     <main id="main">
 
-        <article>
+        <article #historia_tenis>
             <h2>Quando os tênis se tornaram uma realidade no mercado brasileiro?</h2>
             <p>O uso de tênis nas ruas brasileiras começou a ganhar força ainda no século XX, quando modelos
                 inicialmente voltados ao esporte passaram a ser incorporados ao cotidiano. Na década de 1970, por
@@ -76,8 +66,9 @@
                 transformando em símbolo de uma época, demonstrando como o tênis já começava a ultrapassar seu papel
                 original.</p>
         </article>
-        
-        <section>
+
+
+        <section id="sobre">
             <h3>Por que você deve comprar na nossa empresa?</h3>
             <ul>
                 <li>Rápida entrega</li>
@@ -87,6 +78,27 @@
             </ul>
         </section>
 
+        <section id="produtos">
+
+            <h3>Veja como nosso produto funciona</h3>
+
+            <div id="midia">
+                <figure id="video">
+                    <figcaption>Acompanhe nossos tênis de perto</figcaption>
+
+                    <video controls width="250">
+                        <source src="/assets/video/shoes.mp4">
+                    </video>
+                </figure>
+
+                <figure id="audio">
+                    <figcaption>Nossa qualidade também está no som</figcaption>
+
+                    <audio controls src="/assets/audio/footsteps.mp3"></audio>
+                </figure>
+            </div>
+
+        </section>
 
     </main>
 
